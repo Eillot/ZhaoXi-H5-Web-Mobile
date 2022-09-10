@@ -1,4 +1,23 @@
 # ZhaoXi-H5-Web-Mobile
+ZhaoXi-H5-Web-Mobile  朝夕天气Web H5移动端应用 ,正在努力开发中.
+
+## 项目初始化
+```
+npm install
+```
+
+### 项目构建并启动
+```
+npm run dev
+```
+
+### 应用打包
+
+```
+npm run build
+```
+
+# ZhaoXi-H5-Web-Mobile
 
 This template should help get you started developing with Vue 3 in Vite.
 
