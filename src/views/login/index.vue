@@ -1,30 +1,28 @@
-<script lang="ts">
-import { Toast } from "vant";
-
-export default {
-  setup() {
-    const onClickLeft = () => history.back();
-    const onClickRight = () => Toast("按钮");
-    return {
-      onClickLeft,
-      onClickRight,
-    };
-  },
-};
-</script>
 <template>
-  <div>
-    <van-nav-bar
-    title="登录"
-    left-text="返回"
-    right-text="按钮"
-    left-arrow
-    @click-left="onClickLeft"
-    @click-right="onClickRight"
-    fixed="true"
-    />
+  <div> 
+    <van-nav-bar title="登录" fixed=true class="page-nav-bar"/>
+    <van-form >
+      <van-field
+        name="userName"
+        placeholder="请输入用户名"
+        left-icon="manager"
+      />
+      <van-field
+        type="password"
+        name="userPwd"
+        placeholder="请输入密码"
+        left-icon="lock"
+      />
+      <div style="margin: 16px">
+        <van-button block type="primary" native-type="submit">
+          提交
+        </van-button>
+      </div>
+    </van-form>
   </div>
 </template>
+<script lang="ts">
+export default {};
+</script>
 
-<style scoped>
-</style>
+<style></style>
